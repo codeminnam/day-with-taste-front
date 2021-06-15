@@ -10,6 +10,9 @@ import { CloseIcon, SmallLogoIcon } from '../../public/svg';
 
 const Container = styled.main`
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-bottom: 48px;
 `;
 const UpperContainer = styled.div``;
@@ -17,8 +20,6 @@ const ContentContainer = styled.div`
   margin-left: 24px;
 `;
 const ButtonContainer = styled.div`
-  position: fixed;
-  bottom: 48px;
   margin-left: 24px;
 `;
 const Header = styled.div`
