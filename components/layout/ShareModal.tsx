@@ -3,6 +3,7 @@ import Modal from '../common/Modal';
 import {
   CloseIcon,
   FacebookIcon,
+  KakaoIcon,
   LinkIcon,
   TwitterIcon,
 } from '../../public/svg';
@@ -71,6 +72,41 @@ const ShareModal = (props: {
 }) => {
   const { handleModalClosed, isVisible } = props;
   const [isCopied, setIsCopied] = useState(false);
+
+  const shareViaKakao = () => {
+    // kakao sdk script이 정상적으로 불러와졌으면 window.Kakao로 접근이 가능합니다
+
+    // @ts-ignore
+    if (window.Kakao) {
+      // @ts-ignore
+      const kakao = window.Kakao;
+      if (!kakao.isInitialized()) {
+        kakao.init(process.env.NEXT_PUBLIC_KAKAO_KEY);
+      }
+      kakao.Link.sendDefault({
+        objectType: 'feed',
+        content: {
+          title: '취향의 하루',
+          description: '나와 똑같은 하루를 보낸 영혼의 단짝으로부터 온 음악',
+          imageUrl: 'https://ibb.co/0J3Rq0j', // i.e. process.env.FETCH_URL + '/logo.png'
+          link: {
+            mobileWebUrl: `https://day-with-taste.netlify.app`,
+            webUrl: `http://day-with-taste.netlify.app`,
+          },
+        },
+        buttons: [
+          {
+            title: '바로가기',
+            link: {
+              mobileWebUrl: `https://day-with-taste.netlify.app`,
+              webUrl: `http://day-with-taste.netlify.app`,
+            },
+          },
+        ],
+      });
+    }
+  };
+
   useEffect(() => {
     if (isCopied) {
       window.setTimeout(() => {
@@ -126,7 +162,17 @@ const ShareModal = (props: {
                     </IconContainer>
                   </a>
                 </Link>
-
+                <IconContainer onClick={() => shareViaKakao()}>
+                  <Circle
+                    id={'kakao-link-btn'}
+                    icon={<KakaoIcon />}
+                    clickable={true}
+                    backgroundColor={'yellow'}
+                    style={{ marginBottom: 24 }}
+                    noShadow
+                  />
+                  <IconText>카카오톡으로 물어보기</IconText>
+                </IconContainer>
                 <IconContainer>
                   <Link
                     href={`http://twitter.com/share?url=${encodeURIComponent(

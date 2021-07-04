@@ -43,12 +43,12 @@ class MyDocument extends Document {
             content="https://day-with-taste.netlify.app/"
           />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Day-with-taste" />
+          <meta property="og:title" content="취향의 하루" />
           <meta
             property="og:description"
             content="당신과 같은 하루를 보낸 영혼의 단짝으로부터 온 음악"
           />
-          <meta property="og:image" content="img URL here" />
+          <meta property="og:image" content="/img/preview.jpg" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
