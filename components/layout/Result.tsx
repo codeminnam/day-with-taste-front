@@ -113,8 +113,7 @@ const Result = () => {
           title: '영혼의 단짝이 보내주는 음악 추천',
           description:
             '당신과 같은 하루를 보낸 영혼의 단짝은 무슨 음악을 듣고 있을까요?',
-          imageUrl:
-            'https://preview.ibb.co/gQbzQ5/colt_steele_firemarshall.jpg', // i.e. process.env.FETCH_URL + '/logo.png'
+          imageUrl: 'https://day-with-taste.netlify.app/img/preview.jpg', // i.e. process.env.FETCH_URL + '/logo.png'
           link: {
             mobileWebUrl: `https://day-with-taste.netlify.app/result?result=${result}&musicId=${musicId}`,
             webUrl: `http://day-with-taste.netlify.app/result?result=${result}&musicId=${musicId}`,
