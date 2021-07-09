@@ -88,7 +88,7 @@ const ShareModal = (props: {
         content: {
           title: '취향의 하루',
           description: '나와 똑같은 하루를 보낸 영혼의 단짝으로부터 온 음악',
-          imageUrl: 'https://ibb.co/0J3Rq0j', // i.e. process.env.FETCH_URL + '/logo.png'
+          imageUrl: 'https://day-with-taste.netlify.app/img/preview.jpg', // i.e. process.env.FETCH_URL + '/logo.png'
           link: {
             mobileWebUrl: `https://day-with-taste.netlify.app`,
             webUrl: `http://day-with-taste.netlify.app`,
