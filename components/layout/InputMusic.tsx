@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux';
 import { getSongs, setSongs } from '../../reducers/songReducer';
 import { PickSong } from './PickSong';
 import { CloseIcon, SmallLogoIcon } from '../../public/svg';
+import DescModal from './DescModal';
 
 const Container = styled.main`
   display: flex;
@@ -77,6 +78,7 @@ const PickSongContainer = styled.div`
 `;
 
 const InputMusic = () => {
+  const [isDescVisible, setIsDescVisible] = useState(true);
   const [isVisible, setIsVisible] = useState(false);
   const [keyword, setKeyword] = useState('');
   const dispatch = useDispatch();
@@ -135,6 +137,10 @@ const InputMusic = () => {
           </PickSongContainer>
         </Modal>
       </ButtonContainer>
+      <DescModal
+        handleModalClosed={() => setIsDescVisible(false)}
+        isVisible={isDescVisible}
+      />
     </Container>
   );
 };
