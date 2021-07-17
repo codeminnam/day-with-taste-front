@@ -21,12 +21,12 @@ const LayoutContainer = styled.div<{ backgroundColor?: string }>`
   ${({ backgroundColor }) => {
     if (backgroundColor === 'blue')
       return css`
-        background-image: url('/img/BackgroundNight.jpg');
+        background-image: url('/img/backgroundNight.jpg');
         background-position: center;
         background-size: cover;
       `;
     return css`
-      background-image: url('/img/BackgroundDay.jpg');
+      background-image: url('/img/backgroundDay.jpg');
       background-position: center;
       background-size: cover;
     `;
