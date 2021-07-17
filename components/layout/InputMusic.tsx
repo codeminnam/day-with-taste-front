@@ -99,8 +99,8 @@ const InputMusic = () => {
         <UpperContentContainer>
           <TitleText style={{ marginBottom: 108 }}>
             잠결에 들리는 음악소리...{'\n'}
-            내가 좋아하는 거다. {'\n'}
-            제목이 뭐였더라?
+            내가 좋아하는 곡으로 {'\n'}
+            하루가 시작되어 기분이 좋다.
           </TitleText>
           <Input
             placeholder={'노래 제목과 아티스트 이름'}
