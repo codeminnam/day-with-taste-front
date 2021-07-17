@@ -44,6 +44,12 @@ export const questionnaire = [
   },
   {
     id: 7,
+    question: `자 이제 나가볼까?`,
+    answerA: '아슬아슬하게 도착한다',
+    answerB: '여유있게 도착한다',
+  },
+  {
+    id: 8,
     question: `식당으로 들어갔다.
     특이하게도 메뉴판에는
     단 두 개의 메뉴만 적혀 있다.`,
@@ -51,13 +57,13 @@ export const questionnaire = [
     answerB: '양식',
   },
   {
-    id: 8,
+    id: 9,
     question: `내가 좋아하는 메뉴는`,
     answerA: '제일 먼저 먹는다',
     answerB: '아껴뒀다가 먹는다',
   },
   {
-    id: 9,
+    id: 10,
     question: `친구들이랑
     너무 재미있게 놀아서
     미친듯이 피곤한데...`,
@@ -65,7 +71,7 @@ export const questionnaire = [
     answerB: '얼른 씻고 누워야지',
   },
   {
-    id: 10,
+    id: 11,
     question: `씻고 났더니 개운하다.
     오늘 하루도 정말 즐거웠어.
     그럼 이제 자야겠다.`,
