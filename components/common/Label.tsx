@@ -20,7 +20,7 @@ const LabelIcon = styled.div`
 const Label: React.FC<LabelProps> = ({ className, index }) => {
   return (
     <LabelIcon className={className}>
-      <span>{index}/11</span>
+      <span>{index}/10</span>
     </LabelIcon>
   );
 };
