@@ -69,7 +69,6 @@ const Questionnaire = ({ item }: Props) => {
     0,
     0,
     0,
-    0,
   ]);
   const dispatch = useDispatch();
   let resultArr = [];
@@ -81,7 +80,7 @@ const Questionnaire = ({ item }: Props) => {
       ...questionResult.slice(item.id, questionResult.length),
     ];
     setQuestionResult(resultArr);
-    if (item.id === 11) {
+    if (item.id === 10) {
       try {
         await dispatch(
           setResultAction({

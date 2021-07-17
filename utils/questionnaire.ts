@@ -65,7 +65,7 @@ export const questionnaire = [
     answerB: '얼른 씻고 누워야지',
   },
   {
-    id: 11,
+    id: 10,
     question: `씻고 났더니 개운하다.
     오늘 하루도 정말 즐거웠어.
     그럼 이제 자야겠다.`,
