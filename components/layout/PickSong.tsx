@@ -136,7 +136,7 @@ export const PickSong = () => {
     <>
       <Container>
         <SongListContainer>
-          <TitleText>내가 생각하는 음악은</TitleText>
+          <TitleText>음악 검색</TitleText>
           {loading ? (
             <LoadingContainer>
               <LoadingSpinner />
