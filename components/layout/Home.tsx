@@ -52,10 +52,8 @@ const Home = () => {
           <LogoIcon />
           <HomeTitleText>취향의 하루</HomeTitleText>
           <HomeContentText>
-            당신의 취향은 어떤가요? {'\n'}
-            하루를 당신의 취향으로 채워보세요. {'\n'}
-            나와 똑같은 취향의 사람은 {'\n'}
-            어떤 음악을 듣고 있는지 알 수 있답니다.
+            우리가 하루를 보내는 방식이 같다면, {'\n'}
+            우리의 음악 취향도 닮았을까?
           </HomeContentText>
         </ContentContainer>
       </UpperContainer>

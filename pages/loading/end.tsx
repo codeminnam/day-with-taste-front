@@ -9,13 +9,12 @@ import { RootState } from '../../reducers';
 
 const EndLoadingPage = () => {
   const result = useSelector((state: RootState) => state.songs.result);
-  const randomMusic = useSelector(
-    (state: RootState) => state.songs.randomMusic
-  );
+
   const dispatch = useDispatch();
-  const moveToNextPage = (randomMusicId: string) => {
-    Router.push(`/result?result=${result?.result}&musicId=${randomMusicId}`);
+  const moveToNextPage = () => {
+    Router.push('/result-desc');
   };
+
   useEffect(() => {
     try {
       dispatch(postResult(result as Result));
@@ -25,12 +24,8 @@ const EndLoadingPage = () => {
   }, [result]);
 
   useEffect(() => {
-    if (randomMusic)
-      window.setTimeout(
-        () => moveToNextPage(randomMusic?.data?.randomMusic),
-        3000
-      );
-  }, [randomMusic]);
+    window.setTimeout(moveToNextPage, 3000);
+  }, []);
 
   return (
     <Layout color={'blue'}>
