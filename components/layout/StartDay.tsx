@@ -44,7 +44,8 @@ const StartDay = (props: QuoteProps) => {
       <ContentContainer>
         <Circle size={'large'} />
         <TitlePrimaryText themeColor={themeColor}>
-          음악이 당신을 깨우는 중...
+          이 음악으로 {'\n'}
+          하루를 시작합니다...
         </TitlePrimaryText>
       </ContentContainer>
     </Container>

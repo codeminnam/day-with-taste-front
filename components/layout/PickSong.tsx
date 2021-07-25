@@ -162,7 +162,7 @@ export const PickSong = () => {
                 router.push('/loading/start-question');
               }
             }}>
-            이 노래야!
+            선택하기
           </FooterButton>
         </SongListContainer>
       </Container>

@@ -113,10 +113,10 @@ const InputMusic = () => {
       <ButtonContainer>
         <Button
           onClick={() => handleClick()}
-          label={'이 노래는 바로바로바로...!'}
+          label={'검색하기'}
           color={'orange'}
           disabled={keyword === ''}>
-          이 노래는 바로바로바로...!
+          검색하기
         </Button>
         <Modal
           isVisible={isVisible}

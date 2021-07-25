@@ -20,7 +20,6 @@ import PrimaryText from '../common/PrimaryText';
 import { useRouter } from 'next/router';
 import { useDispatch } from 'react-redux';
 import { getRecommendation } from '../../reducers/songReducer';
-import ResultModal from './ResultModal';
 
 const Container = styled.main`
   display: flex;
@@ -76,7 +75,6 @@ const Result = () => {
   const router = useRouter();
   const { result, musicId } = router.query;
   const dispatch = useDispatch();
-  const [isVisible, setIsVisible] = useState(true);
   const [isExpanded, setIsExpanded] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
   const [isTeamInfo, setIsTeamInfo] = useState(false);
@@ -236,14 +234,10 @@ const Result = () => {
               )}
             </CircleContainer>
           </ButtonContainer>
-          <ResultModal
-            handleModalClosed={() => setIsVisible(false)}
-            isVisible={isVisible}
-          />
         </Container>
       </>
     ),
-    [isCopied, isExpanded, isVisible]
+    [isCopied, isExpanded]
   );
   return isTeamInfo ? (
     <Team onRequestGoBack={() => setIsTeamInfo(false)} />
