@@ -11,6 +11,7 @@ declare module 'styled-components' {
       blue: string;
       yellow: string;
       skyBlue: string;
+      white: string;
     };
 
     fontSizes: {

@@ -3,7 +3,13 @@ import styled, { css } from 'styled-components';
 
 export type CircleProps = React.HTMLAttributes<HTMLElement> & {
   size?: 'small' | 'medium' | 'large';
-  backgroundColor?: 'lightBlue' | 'orange' | 'blue' | 'yellow' | 'skyBlue';
+  backgroundColor?:
+    | 'lightBlue'
+    | 'orange'
+    | 'blue'
+    | 'yellow'
+    | 'skyBlue'
+    | 'white';
   icon?: React.ReactNode;
   clickable?: boolean;
   noShadow?: boolean;
@@ -11,7 +17,13 @@ export type CircleProps = React.HTMLAttributes<HTMLElement> & {
 };
 
 const CircleIcon = styled.div<{
-  backgroundColor?: 'lightBlue' | 'orange' | 'blue' | 'yellow' | 'skyBlue';
+  backgroundColor?:
+    | 'lightBlue'
+    | 'orange'
+    | 'blue'
+    | 'yellow'
+    | 'skyBlue'
+    | 'white';
   size?: 'small' | 'medium' | 'large';
   clickable?: boolean;
   noShadow: boolean;

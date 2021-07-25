@@ -10,3 +10,4 @@ export { default as SmallLogoIcon } from './SmallLogo';
 export { default as PlayCircleIcon } from './PlayCircle';
 export { default as CloseIcon } from './Close';
 export { default as RotateIcon } from './Rotate';
+export { default as RightArrowIcon } from './RightArrow';
