@@ -1,8 +1,9 @@
 import React from 'react';
 import Modal from '../common/Modal';
-import { CloseIcon } from '../../public/svg';
+import { RightArrowIcon } from '../../public/svg';
 import styled from 'styled-components';
 import PrimaryText from '../common/PrimaryText';
+import Circle from '../common/Circle';
 
 const Container = styled.main`
   width: 100%;
@@ -14,7 +15,7 @@ const DescContainer = styled.div`
   position: relative;
 `;
 const BodyContainer = styled.div`
-  padding: 48px 0;
+  padding: 48px 0 26px;
 `;
 const TitleText = styled(PrimaryText)`
   font-style: normal;
@@ -34,15 +35,11 @@ const BodyText = styled.p`
   line-height: 26.64px;
   color: #fff;
 `;
-const CloseIconContainer = styled.div`
-  cursor: pointer;
-  position: absolute;
-  top: 24px;
-  right: 24px;
-
-  path {
-    stroke: #fff;
-  }
+const CircleContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 24px;
+  margin-top: 24px;
 `;
 
 const DescModal = (props: {
@@ -58,9 +55,6 @@ const DescModal = (props: {
         width={312}
         handleModalClosed={handleModalClosed}>
         <DescContainer>
-          <CloseIconContainer onClick={handleModalClosed}>
-            <CloseIcon />
-          </CloseIconContainer>
           <Container>
             <BodyContainer>
               <TitleText color="white">
@@ -77,6 +71,16 @@ const DescModal = (props: {
                 당신의 음악도 같은 하루를 보낸 {'\n'}
                 누군가에게 전달될 거예요.
               </BodyText>
+              <CircleContainer>
+                <Circle
+                  backgroundColor={'white'}
+                  icon={<RightArrowIcon />}
+                  clickable={true}
+                  style={{ marginBottom: 10 }}
+                  noShadow={true}
+                  onClick={handleModalClosed}
+                />
+              </CircleContainer>
             </BodyContainer>
           </Container>
         </DescContainer>

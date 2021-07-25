@@ -21,6 +21,7 @@ const colors = {
   blue: '#227aee',
   yellow: '#fddf32',
   skyBlue: '#2aa3ef',
+  white: '#ffffff',
 };
 
 //TODO margin & padding도 설정
