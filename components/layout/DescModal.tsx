@@ -1,6 +1,6 @@
 import React from 'react';
 import Modal from '../common/Modal';
-import { CloseIcon, RightArrowIcon } from '../../public/svg';
+import { RightArrowIcon } from '../../public/svg';
 import styled from 'styled-components';
 import PrimaryText from '../common/PrimaryText';
 import Circle from '../common/Circle';
