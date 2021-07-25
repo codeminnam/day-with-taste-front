@@ -46,6 +46,17 @@ const Header = styled.div`
   align-items: center;
   margin-bottom: 32px;
 `;
+const BodyText = styled.p`
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  padding-left: 17px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  white-space: pre-line;
+  line-height: 26.64px;
+  color: #427d96;
+`;
 const Input = styled.input`
   width: 311px;
   height: 40px;
@@ -99,11 +110,12 @@ const InputMusic = () => {
           <SmallLogoIcon color={'orange'} />
         </Header>
         <UpperContentContainer>
-          <TitleText style={{ marginBottom: 108 }}>
+          <TitleText style={{ marginBottom: 80 }}>
             잠결에 들리는 음악소리...{'\n'}
             내가 좋아하는 곡으로 {'\n'}
             하루가 시작되어 기분이 좋다.
           </TitleText>
+          <BodyText>좋아하는 음악을 입력하세요</BodyText>
           <Input
             placeholder={'노래 제목과 아티스트 이름'}
             onChange={(e) => setKeyword(e.target.value)}

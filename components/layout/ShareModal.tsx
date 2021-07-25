@@ -128,7 +128,7 @@ const ShareModal = (props: {
           <Container>
             {isCopied && <CopiedText>클립보드에 복사되었습니다!</CopiedText>}
             <IconListContainer>
-              <TitleText>친구에게 어떻게 물어볼까요?</TitleText>
+              <TitleText>공유 방식</TitleText>
               <IconsContainer>
                 <CopyToClipboard
                   text={`https://day-with-taste.netlify.app`}
